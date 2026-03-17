@@ -1,0 +1,111 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using App.WindowsApp.Views;
+using App.core.Services;
+
+
+namespace App.WindowsApp.Forms
+{
+    public partial class MainForm : Form
+    {
+        InMemoryProductService _productService = new InMemoryProductService();
+        Dictionary<Type, UserControl> _views = new Dictionary<Type, UserControl>();
+        public MainForm()
+        {
+            InitializeComponent();
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void statusStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void pnlContent_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnDashboard_Click(object sender, EventArgs e)
+        {
+            //this.pnlContent.Controls.Clear();
+            //this.pnlContent.Controls.Add(new DashboardView());
+            ShowView(() => new DashboardView());
+        }
+
+        private void pbUser_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblUser_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnProducts_Click(object sender, EventArgs e)
+        {
+
+            ShowView(() => new ProductView(_productService));
+
+        }
+
+        private void ShowView<T>(Func<T> factory) where T : UserControl
+        {
+            var key = typeof(T);
+
+            if (!_views.TryGetValue(key, out var view))
+            {
+                view = factory();
+                //view.Dock = DockStyle.Fill;
+                _views[key] = view;
+            }
+
+            if (!pnlContent.Controls.Contains(view))
+            {
+                pnlContent.Controls.Clear();
+                pnlContent.Controls.Add(view);
+            }
+
+            view.Visible = true;
+            view.BringToFront();
+        }
+
+    }
+}
+
+
+
+//this.pnlContent.Controls.Clear();
+//this.pnlContent.Controls.Add(new Product());
+//private void ShowView<T>(Func<T> factory) where T : UserControl
+//{
+//    var key = typeof(T);
+
+//    if (views.TryGetValue(key, out var view))
+//    {
+//        view = factory();
+//        view.Dock = DockStyle.Fill;
+//        views[key] = view;
+//    }
+//    if (!pnlContent.Controls.Contains(view))
+//    {
+//        pnlContent.Controls.Clear();
+//        pnlContent.Controls.Add(view);
+//    }
+//    view.Visible = true;
+//    view.BringToFront();
+
+//}
+//private readonly Dictionary<Type, UserControl> views = new Dictionary<Type, UserControl>();

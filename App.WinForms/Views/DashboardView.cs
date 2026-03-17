@@ -1,0 +1,45 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace App.WinForms.Views
+{
+    public partial class DashboardView : UserControl
+    {
+        public DashboardView()
+        {
+            InitializeComponent();
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pnlRevenue_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lblSaleV_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tblDashboard_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+    }
+}
