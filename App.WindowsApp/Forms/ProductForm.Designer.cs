@@ -216,7 +216,7 @@
             flpProductForm.Controls.Add(btnCancel);
             flpProductForm.Dock = DockStyle.Bottom;
             flpProductForm.FlowDirection = FlowDirection.RightToLeft;
-            flpProductForm.Location = new Point(0, 166);
+            flpProductForm.Location = new Point(0, 197);
             flpProductForm.Margin = new Padding(3, 2, 3, 2);
             flpProductForm.Name = "flpProductForm";
             flpProductForm.Size = new Size(459, 34);
@@ -253,7 +253,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(459, 200);
+            ClientSize = new Size(459, 231);
             Controls.Add(flpProductForm);
             Controls.Add(tlpProductForm);
             Margin = new Padding(3, 2, 3, 2);
