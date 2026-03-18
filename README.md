@@ -1,5 +1,5 @@
 # MiniForm-BackOffice
 ## Windows Application - Layered
 
-###App.Core
+###App.core
 ###App.WindowsApp
