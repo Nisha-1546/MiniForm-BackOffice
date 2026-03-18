@@ -89,7 +89,7 @@
             lblName.Location = new Point(3, 0);
             lblName.Name = "lblName";
             lblName.Size = new Size(73, 22);
-            lblName.TabIndex = 0;
+            lblName.TabIndex = 6;
             lblName.Text = "Name";
             lblName.TextAlign = ContentAlignment.MiddleLeft;
             // 
@@ -101,7 +101,7 @@
             lblCategory.Location = new Point(3, 22);
             lblCategory.Name = "lblCategory";
             lblCategory.Size = new Size(73, 22);
-            lblCategory.TabIndex = 1;
+            lblCategory.TabIndex = 7;
             lblCategory.Text = "Category";
             lblCategory.TextAlign = ContentAlignment.MiddleLeft;
             // 
@@ -113,7 +113,7 @@
             lblPrice.Location = new Point(3, 44);
             lblPrice.Name = "lblPrice";
             lblPrice.Size = new Size(73, 22);
-            lblPrice.TabIndex = 2;
+            lblPrice.TabIndex = 8;
             lblPrice.Text = "Price";
             lblPrice.TextAlign = ContentAlignment.MiddleLeft;
             // 
@@ -125,7 +125,7 @@
             lblStock.Location = new Point(3, 66);
             lblStock.Name = "lblStock";
             lblStock.Size = new Size(73, 22);
-            lblStock.TabIndex = 3;
+            lblStock.TabIndex = 9;
             lblStock.Text = "Stock";
             lblStock.TextAlign = ContentAlignment.MiddleLeft;
             // 
@@ -137,7 +137,7 @@
             lblStatus.Location = new Point(3, 88);
             lblStatus.Name = "lblStatus";
             lblStatus.Size = new Size(73, 22);
-            lblStatus.TabIndex = 4;
+            lblStatus.TabIndex = 10;
             lblStatus.Text = "Status";
             lblStatus.TextAlign = ContentAlignment.MiddleLeft;
             // 
@@ -149,7 +149,7 @@
             lblID.Location = new Point(3, 110);
             lblID.Name = "lblID";
             lblID.Size = new Size(73, 26);
-            lblID.TabIndex = 5;
+            lblID.TabIndex = 11;
             lblID.Text = "ID";
             lblID.TextAlign = ContentAlignment.MiddleLeft;
             // 
@@ -160,7 +160,7 @@
             txtName.Margin = new Padding(3, 2, 3, 2);
             txtName.Name = "txtName";
             txtName.Size = new Size(374, 23);
-            txtName.TabIndex = 6;
+            txtName.TabIndex = 0;
             // 
             // cbCategory
             // 
@@ -170,7 +170,7 @@
             cbCategory.Margin = new Padding(3, 2, 3, 2);
             cbCategory.Name = "cbCategory";
             cbCategory.Size = new Size(374, 23);
-            cbCategory.TabIndex = 11;
+            cbCategory.TabIndex = 1;
             // 
             // cbStatus
             // 
@@ -180,7 +180,7 @@
             cbStatus.Margin = new Padding(3, 2, 3, 2);
             cbStatus.Name = "cbStatus";
             cbStatus.Size = new Size(374, 23);
-            cbStatus.TabIndex = 12;
+            cbStatus.TabIndex = 4;
             // 
             // txtId
             // 
@@ -190,7 +190,7 @@
             txtId.Name = "txtId";
             txtId.ReadOnly = true;
             txtId.Size = new Size(374, 23);
-            txtId.TabIndex = 13;
+            txtId.TabIndex = 5;
             // 
             // nupPrice
             // 
@@ -199,7 +199,7 @@
             nupPrice.Margin = new Padding(3, 2, 3, 2);
             nupPrice.Name = "nupPrice";
             nupPrice.Size = new Size(374, 23);
-            nupPrice.TabIndex = 14;
+            nupPrice.TabIndex = 2;
             // 
             // nupStock
             // 
@@ -208,7 +208,7 @@
             nupStock.Margin = new Padding(3, 2, 3, 2);
             nupStock.Name = "nupStock";
             nupStock.Size = new Size(374, 23);
-            nupStock.TabIndex = 15;
+            nupStock.TabIndex = 3;
             // 
             // flpProductForm
             // 
