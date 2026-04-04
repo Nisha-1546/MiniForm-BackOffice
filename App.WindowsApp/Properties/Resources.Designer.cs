@@ -93,6 +93,16 @@ namespace App.WindowsApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ico_customer {
+            get {
+                object obj = ResourceManager.GetObject("ico_customer", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ico_dashboard {
             get {
                 object obj = ResourceManager.GetObject("ico_dashboard", resourceCulture);
@@ -186,6 +196,16 @@ namespace App.WindowsApp.Properties {
         internal static System.Drawing.Bitmap ico_save {
             get {
                 object obj = ResourceManager.GetObject("ico_save", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ico_savenow {
+            get {
+                object obj = ResourceManager.GetObject("ico_savenow", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -30,298 +30,316 @@ namespace App.WindowsApp.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            this.pnlHeader = new System.Windows.Forms.Panel();
-            this.flpRight = new System.Windows.Forms.FlowLayoutPanel();
-            this.pbUser = new System.Windows.Forms.PictureBox();
-            this.lblUser = new System.Windows.Forms.Label();
-            this.flpLeft = new System.Windows.Forms.FlowLayoutPanel();
-            this.pbLogo = new System.Windows.Forms.PictureBox();
-            this.pnlSidebar = new System.Windows.Forms.Panel();
-            this.flpNav = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnDashboard = new System.Windows.Forms.Button();
-            this.btnProducts = new System.Windows.Forms.Button();
-            this.btnOrders = new System.Windows.Forms.Button();
-            this.btnReport = new System.Windows.Forms.Button();
-            this.btnSync = new System.Windows.Forms.Button();
-            this.btnLogs = new System.Windows.Forms.Button();
-            this.btnSetting = new System.Windows.Forms.Button();
-            this.pnlContent = new System.Windows.Forms.Panel();
-            this.statusStrip = new System.Windows.Forms.StatusStrip();
-            this.tsLabelStatus = new System.Windows.Forms.ToolStripStatusLabel();
-            this.pnlHeader.SuspendLayout();
-            this.flpRight.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbUser)).BeginInit();
-            this.flpLeft.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
-            this.pnlSidebar.SuspendLayout();
-            this.flpNav.SuspendLayout();
-            this.statusStrip.SuspendLayout();
-            this.SuspendLayout();
+            pnlHeader = new Panel();
+            flpRight = new FlowLayoutPanel();
+            pbUser = new PictureBox();
+            lblUser = new Label();
+            flpLeft = new FlowLayoutPanel();
+            pbLogo = new PictureBox();
+            pnlSidebar = new Panel();
+            flpNav = new FlowLayoutPanel();
+            btnDashboard = new Button();
+            btnProducts = new Button();
+            btnCustomer = new Button();
+            btnOrders = new Button();
+            btnReport = new Button();
+            btnSync = new Button();
+            btnLogs = new Button();
+            btnSetting = new Button();
+            pnlContent = new Panel();
+            statusStrip = new StatusStrip();
+            tsLabelStatus = new ToolStripStatusLabel();
+            pnlHeader.SuspendLayout();
+            flpRight.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pbUser).BeginInit();
+            flpLeft.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pbLogo).BeginInit();
+            pnlSidebar.SuspendLayout();
+            flpNav.SuspendLayout();
+            statusStrip.SuspendLayout();
+            SuspendLayout();
             // 
             // pnlHeader
             // 
-            this.pnlHeader.Controls.Add(this.flpRight);
-            this.pnlHeader.Controls.Add(this.flpLeft);
-            this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlHeader.Location = new System.Drawing.Point(0, 0);
-            this.pnlHeader.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.pnlHeader.Name = "pnlHeader";
-            this.pnlHeader.Size = new System.Drawing.Size(563, 44);
-            this.pnlHeader.TabIndex = 0;
+            pnlHeader.Controls.Add(flpRight);
+            pnlHeader.Controls.Add(flpLeft);
+            pnlHeader.Dock = DockStyle.Top;
+            pnlHeader.Location = new Point(0, 0);
+            pnlHeader.Margin = new Padding(4, 3, 4, 3);
+            pnlHeader.Name = "pnlHeader";
+            pnlHeader.Size = new Size(551, 44);
+            pnlHeader.TabIndex = 0;
             // 
             // flpRight
             // 
-            this.flpRight.Controls.Add(this.pbUser);
-            this.flpRight.Controls.Add(this.lblUser);
-            this.flpRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.flpRight.Location = new System.Drawing.Point(435, 0);
-            this.flpRight.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.flpRight.Name = "flpRight";
-            this.flpRight.Size = new System.Drawing.Size(128, 44);
-            this.flpRight.TabIndex = 2;
+            flpRight.Controls.Add(pbUser);
+            flpRight.Controls.Add(lblUser);
+            flpRight.Dock = DockStyle.Right;
+            flpRight.Location = new Point(423, 0);
+            flpRight.Margin = new Padding(4, 3, 4, 3);
+            flpRight.Name = "flpRight";
+            flpRight.Size = new Size(128, 44);
+            flpRight.TabIndex = 2;
             // 
             // pbUser
             // 
-            this.pbUser.Image = global::App.WindowsApp.Properties.Resources.ico_Admin;
-            this.pbUser.Location = new System.Drawing.Point(3, 3);
-            this.pbUser.Name = "pbUser";
-            this.pbUser.Padding = new System.Windows.Forms.Padding(5, 10, 0, 10);
-            this.pbUser.Size = new System.Drawing.Size(29, 38);
-            this.pbUser.TabIndex = 0;
-            this.pbUser.TabStop = false;
-            this.pbUser.Click += new System.EventHandler(this.pbUser_Click);
+            pbUser.Image = Properties.Resources.ico_Admin;
+            pbUser.Location = new Point(3, 3);
+            pbUser.Name = "pbUser";
+            pbUser.Padding = new Padding(5, 10, 0, 10);
+            pbUser.Size = new Size(29, 38);
+            pbUser.TabIndex = 0;
+            pbUser.TabStop = false;
+            pbUser.Click += pbUser_Click;
             // 
             // lblUser
             // 
-            this.lblUser.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lblUser.AutoSize = true;
-            this.lblUser.Location = new System.Drawing.Point(38, 9);
-            this.lblUser.Name = "lblUser";
-            this.lblUser.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
-            this.lblUser.Size = new System.Drawing.Size(43, 25);
-            this.lblUser.TabIndex = 1;
-            this.lblUser.Text = "Admin";
-            this.lblUser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblUser.Click += new System.EventHandler(this.lblUser_Click);
+            lblUser.Anchor = AnchorStyles.Left;
+            lblUser.AutoSize = true;
+            lblUser.Location = new Point(38, 9);
+            lblUser.Name = "lblUser";
+            lblUser.Padding = new Padding(0, 10, 0, 0);
+            lblUser.Size = new Size(43, 25);
+            lblUser.TabIndex = 1;
+            lblUser.Text = "Admin";
+            lblUser.TextAlign = ContentAlignment.MiddleCenter;
+            lblUser.Click += lblUser_Click;
             // 
             // flpLeft
             // 
-            this.flpLeft.Controls.Add(this.pbLogo);
-            this.flpLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.flpLeft.Location = new System.Drawing.Point(0, 0);
-            this.flpLeft.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.flpLeft.Name = "flpLeft";
-            this.flpLeft.Size = new System.Drawing.Size(128, 44);
-            this.flpLeft.TabIndex = 0;
+            flpLeft.Controls.Add(pbLogo);
+            flpLeft.Dock = DockStyle.Left;
+            flpLeft.Location = new Point(0, 0);
+            flpLeft.Margin = new Padding(4, 3, 4, 3);
+            flpLeft.Name = "flpLeft";
+            flpLeft.Size = new Size(69, 44);
+            flpLeft.TabIndex = 0;
             // 
             // pbLogo
             // 
-            this.pbLogo.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pbLogo.Image = global::App.WindowsApp.Properties.Resources.ico_home;
-            this.pbLogo.Location = new System.Drawing.Point(3, 3);
-            this.pbLogo.Name = "pbLogo";
-            this.pbLogo.Padding = new System.Windows.Forms.Padding(10, 10, 0, 10);
-            this.pbLogo.Size = new System.Drawing.Size(63, 44);
-            this.pbLogo.TabIndex = 0;
-            this.pbLogo.TabStop = false;
+            pbLogo.Anchor = AnchorStyles.Left;
+            pbLogo.Image = Properties.Resources.ico_home;
+            pbLogo.Location = new Point(3, 3);
+            pbLogo.Name = "pbLogo";
+            pbLogo.Padding = new Padding(10, 10, 0, 10);
+            pbLogo.Size = new Size(63, 44);
+            pbLogo.TabIndex = 0;
+            pbLogo.TabStop = false;
             // 
             // pnlSidebar
             // 
-            this.pnlSidebar.Controls.Add(this.flpNav);
-            this.pnlSidebar.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnlSidebar.Location = new System.Drawing.Point(0, 44);
-            this.pnlSidebar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.pnlSidebar.Name = "pnlSidebar";
-            this.pnlSidebar.Size = new System.Drawing.Size(167, 294);
-            this.pnlSidebar.TabIndex = 1;
+            pnlSidebar.Controls.Add(flpNav);
+            pnlSidebar.Dock = DockStyle.Left;
+            pnlSidebar.Location = new Point(0, 44);
+            pnlSidebar.Margin = new Padding(4, 3, 4, 3);
+            pnlSidebar.Name = "pnlSidebar";
+            pnlSidebar.Size = new Size(167, 390);
+            pnlSidebar.TabIndex = 1;
             // 
             // flpNav
             // 
-            this.flpNav.Controls.Add(this.btnDashboard);
-            this.flpNav.Controls.Add(this.btnProducts);
-            this.flpNav.Controls.Add(this.btnOrders);
-            this.flpNav.Controls.Add(this.btnReport);
-            this.flpNav.Controls.Add(this.btnSync);
-            this.flpNav.Controls.Add(this.btnLogs);
-            this.flpNav.Controls.Add(this.btnSetting);
-            this.flpNav.Dock = System.Windows.Forms.DockStyle.Left;
-            this.flpNav.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flpNav.Location = new System.Drawing.Point(0, 0);
-            this.flpNav.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.flpNav.Name = "flpNav";
-            this.flpNav.Size = new System.Drawing.Size(167, 294);
-            this.flpNav.TabIndex = 0;
+            flpNav.Controls.Add(btnDashboard);
+            flpNav.Controls.Add(btnProducts);
+            flpNav.Controls.Add(btnCustomer);
+            flpNav.Controls.Add(btnOrders);
+            flpNav.Controls.Add(btnReport);
+            flpNav.Controls.Add(btnSync);
+            flpNav.Controls.Add(btnLogs);
+            flpNav.Controls.Add(btnSetting);
+            flpNav.Dock = DockStyle.Left;
+            flpNav.FlowDirection = FlowDirection.TopDown;
+            flpNav.Location = new Point(0, 0);
+            flpNav.Margin = new Padding(4, 3, 4, 3);
+            flpNav.Name = "flpNav";
+            flpNav.Size = new Size(167, 390);
+            flpNav.TabIndex = 0;
             // 
             // btnDashboard
             // 
-            this.btnDashboard.FlatAppearance.BorderSize = 0;
-            this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDashboard.Image = global::App.WindowsApp.Properties.Resources.ico_dashboard;
-            this.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDashboard.Location = new System.Drawing.Point(3, 3);
-            this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnDashboard.Size = new System.Drawing.Size(200, 40);
-            this.btnDashboard.TabIndex = 0;
-            this.btnDashboard.Text = "Dashboard";
-            this.btnDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDashboard.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnDashboard.UseVisualStyleBackColor = true;
-            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
+            btnDashboard.FlatAppearance.BorderSize = 0;
+            btnDashboard.FlatStyle = FlatStyle.Flat;
+            btnDashboard.Image = Properties.Resources.ico_dashboard;
+            btnDashboard.ImageAlign = ContentAlignment.MiddleLeft;
+            btnDashboard.Location = new Point(3, 3);
+            btnDashboard.Name = "btnDashboard";
+            btnDashboard.Padding = new Padding(10, 0, 0, 0);
+            btnDashboard.Size = new Size(200, 40);
+            btnDashboard.TabIndex = 0;
+            btnDashboard.Text = "Dashboard";
+            btnDashboard.TextAlign = ContentAlignment.MiddleLeft;
+            btnDashboard.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnDashboard.UseVisualStyleBackColor = true;
+            btnDashboard.Click += btnDashboard_Click;
             // 
             // btnProducts
             // 
-            this.btnProducts.FlatAppearance.BorderSize = 0;
-            this.btnProducts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProducts.Image = global::App.WindowsApp.Properties.Resources.ico_product;
-            this.btnProducts.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProducts.Location = new System.Drawing.Point(3, 49);
-            this.btnProducts.Name = "btnProducts";
-            this.btnProducts.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnProducts.Size = new System.Drawing.Size(200, 40);
-            this.btnProducts.TabIndex = 1;
-            this.btnProducts.Text = "Products";
-            this.btnProducts.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProducts.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnProducts.UseVisualStyleBackColor = true;
-            this.btnProducts.Click += new System.EventHandler(this.btnProducts_Click);
+            btnProducts.FlatAppearance.BorderSize = 0;
+            btnProducts.FlatStyle = FlatStyle.Flat;
+            btnProducts.Image = Properties.Resources.ico_product;
+            btnProducts.ImageAlign = ContentAlignment.MiddleLeft;
+            btnProducts.Location = new Point(3, 49);
+            btnProducts.Name = "btnProducts";
+            btnProducts.Padding = new Padding(10, 0, 0, 0);
+            btnProducts.Size = new Size(200, 40);
+            btnProducts.TabIndex = 1;
+            btnProducts.Text = "Products";
+            btnProducts.TextAlign = ContentAlignment.MiddleLeft;
+            btnProducts.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnProducts.UseVisualStyleBackColor = true;
+            btnProducts.Click += btnProducts_Click;
+            // 
+            // btnCustomer
+            // 
+            btnCustomer.FlatAppearance.BorderSize = 0;
+            btnCustomer.FlatStyle = FlatStyle.Flat;
+            btnCustomer.Image = Properties.Resources.ico_customer;
+            btnCustomer.ImageAlign = ContentAlignment.MiddleLeft;
+            btnCustomer.Location = new Point(3, 95);
+            btnCustomer.Name = "btnCustomer";
+            btnCustomer.Padding = new Padding(10, 0, 0, 0);
+            btnCustomer.Size = new Size(200, 40);
+            btnCustomer.TabIndex = 7;
+            btnCustomer.Text = "Customer";
+            btnCustomer.TextAlign = ContentAlignment.MiddleLeft;
+            btnCustomer.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnCustomer.UseVisualStyleBackColor = true;
+            btnCustomer.Click += btnCustomer_Click;
             // 
             // btnOrders
             // 
-            this.btnOrders.FlatAppearance.BorderSize = 0;
-            this.btnOrders.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOrders.Image = global::App.WindowsApp.Properties.Resources.ico_order;
-            this.btnOrders.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnOrders.Location = new System.Drawing.Point(3, 95);
-            this.btnOrders.Name = "btnOrders";
-            this.btnOrders.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnOrders.Size = new System.Drawing.Size(200, 40);
-            this.btnOrders.TabIndex = 2;
-            this.btnOrders.Text = "Orders";
-            this.btnOrders.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnOrders.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnOrders.UseVisualStyleBackColor = true;
+            btnOrders.FlatAppearance.BorderSize = 0;
+            btnOrders.FlatStyle = FlatStyle.Flat;
+            btnOrders.Image = Properties.Resources.ico_order;
+            btnOrders.ImageAlign = ContentAlignment.MiddleLeft;
+            btnOrders.Location = new Point(3, 141);
+            btnOrders.Name = "btnOrders";
+            btnOrders.Padding = new Padding(10, 0, 0, 0);
+            btnOrders.Size = new Size(200, 40);
+            btnOrders.TabIndex = 2;
+            btnOrders.Text = "Orders";
+            btnOrders.TextAlign = ContentAlignment.MiddleLeft;
+            btnOrders.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnOrders.UseVisualStyleBackColor = true;
             // 
             // btnReport
             // 
-            this.btnReport.FlatAppearance.BorderSize = 0;
-            this.btnReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReport.Image = global::App.WindowsApp.Properties.Resources.ico_report;
-            this.btnReport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReport.Location = new System.Drawing.Point(3, 141);
-            this.btnReport.Name = "btnReport";
-            this.btnReport.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnReport.Size = new System.Drawing.Size(200, 40);
-            this.btnReport.TabIndex = 3;
-            this.btnReport.Text = "Report";
-            this.btnReport.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnReport.UseVisualStyleBackColor = true;
+            btnReport.FlatAppearance.BorderSize = 0;
+            btnReport.FlatStyle = FlatStyle.Flat;
+            btnReport.Image = Properties.Resources.ico_report;
+            btnReport.ImageAlign = ContentAlignment.MiddleLeft;
+            btnReport.Location = new Point(3, 187);
+            btnReport.Name = "btnReport";
+            btnReport.Padding = new Padding(10, 0, 0, 0);
+            btnReport.Size = new Size(200, 40);
+            btnReport.TabIndex = 3;
+            btnReport.Text = "Report";
+            btnReport.TextAlign = ContentAlignment.MiddleLeft;
+            btnReport.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnReport.UseVisualStyleBackColor = true;
             // 
             // btnSync
             // 
-            this.btnSync.FlatAppearance.BorderSize = 0;
-            this.btnSync.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSync.Image = global::App.WindowsApp.Properties.Resources.ico_sync;
-            this.btnSync.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSync.Location = new System.Drawing.Point(3, 187);
-            this.btnSync.Name = "btnSync";
-            this.btnSync.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnSync.Size = new System.Drawing.Size(200, 40);
-            this.btnSync.TabIndex = 4;
-            this.btnSync.Text = "Sync";
-            this.btnSync.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSync.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSync.UseVisualStyleBackColor = true;
+            btnSync.FlatAppearance.BorderSize = 0;
+            btnSync.FlatStyle = FlatStyle.Flat;
+            btnSync.Image = Properties.Resources.ico_sync;
+            btnSync.ImageAlign = ContentAlignment.MiddleLeft;
+            btnSync.Location = new Point(3, 233);
+            btnSync.Name = "btnSync";
+            btnSync.Padding = new Padding(10, 0, 0, 0);
+            btnSync.Size = new Size(200, 40);
+            btnSync.TabIndex = 4;
+            btnSync.Text = "Sync";
+            btnSync.TextAlign = ContentAlignment.MiddleLeft;
+            btnSync.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnSync.UseVisualStyleBackColor = true;
             // 
             // btnLogs
             // 
-            this.btnLogs.FlatAppearance.BorderSize = 0;
-            this.btnLogs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogs.Image = global::App.WindowsApp.Properties.Resources.ico_logs;
-            this.btnLogs.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogs.Location = new System.Drawing.Point(3, 233);
-            this.btnLogs.Name = "btnLogs";
-            this.btnLogs.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnLogs.Size = new System.Drawing.Size(200, 40);
-            this.btnLogs.TabIndex = 5;
-            this.btnLogs.Text = "Logs";
-            this.btnLogs.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogs.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnLogs.UseVisualStyleBackColor = true;
+            btnLogs.FlatAppearance.BorderSize = 0;
+            btnLogs.FlatStyle = FlatStyle.Flat;
+            btnLogs.Image = Properties.Resources.ico_logs;
+            btnLogs.ImageAlign = ContentAlignment.MiddleLeft;
+            btnLogs.Location = new Point(3, 279);
+            btnLogs.Name = "btnLogs";
+            btnLogs.Padding = new Padding(10, 0, 0, 0);
+            btnLogs.Size = new Size(200, 40);
+            btnLogs.TabIndex = 5;
+            btnLogs.Text = "Logs";
+            btnLogs.TextAlign = ContentAlignment.MiddleLeft;
+            btnLogs.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnLogs.UseVisualStyleBackColor = true;
             // 
             // btnSetting
             // 
-            this.btnSetting.FlatAppearance.BorderSize = 0;
-            this.btnSetting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSetting.Image = global::App.WindowsApp.Properties.Resources.ico_settings;
-            this.btnSetting.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSetting.Location = new System.Drawing.Point(209, 3);
-            this.btnSetting.Name = "btnSetting";
-            this.btnSetting.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnSetting.Size = new System.Drawing.Size(200, 40);
-            this.btnSetting.TabIndex = 6;
-            this.btnSetting.Text = "Setting";
-            this.btnSetting.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSetting.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSetting.UseVisualStyleBackColor = true;
+            btnSetting.FlatAppearance.BorderSize = 0;
+            btnSetting.FlatStyle = FlatStyle.Flat;
+            btnSetting.Image = Properties.Resources.ico_settings;
+            btnSetting.ImageAlign = ContentAlignment.MiddleLeft;
+            btnSetting.Location = new Point(3, 325);
+            btnSetting.Name = "btnSetting";
+            btnSetting.Padding = new Padding(10, 0, 0, 0);
+            btnSetting.Size = new Size(200, 40);
+            btnSetting.TabIndex = 6;
+            btnSetting.Text = "Setting";
+            btnSetting.TextAlign = ContentAlignment.MiddleLeft;
+            btnSetting.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnSetting.UseVisualStyleBackColor = true;
             // 
             // pnlContent
             // 
-            this.pnlContent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlContent.Location = new System.Drawing.Point(167, 44);
-            this.pnlContent.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.pnlContent.Name = "pnlContent";
-            this.pnlContent.Size = new System.Drawing.Size(396, 294);
-            this.pnlContent.TabIndex = 2;
-            this.pnlContent.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlContent_Paint);
+            pnlContent.Dock = DockStyle.Fill;
+            pnlContent.Location = new Point(167, 44);
+            pnlContent.Margin = new Padding(4, 3, 4, 3);
+            pnlContent.Name = "pnlContent";
+            pnlContent.Size = new Size(384, 390);
+            pnlContent.TabIndex = 2;
+            pnlContent.Paint += pnlContent_Paint;
             // 
             // statusStrip
             // 
-            this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsLabelStatus});
-            this.statusStrip.Location = new System.Drawing.Point(0, 338);
-            this.statusStrip.Name = "statusStrip";
-            this.statusStrip.Padding = new System.Windows.Forms.Padding(1, 0, 16, 0);
-            this.statusStrip.Size = new System.Drawing.Size(563, 25);
-            this.statusStrip.TabIndex = 3;
-            this.statusStrip.Text = "statusStrip1";
-            this.statusStrip.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.statusStrip1_ItemClicked);
+            statusStrip.Items.AddRange(new ToolStripItem[] { tsLabelStatus });
+            statusStrip.Location = new Point(0, 434);
+            statusStrip.Name = "statusStrip";
+            statusStrip.Padding = new Padding(1, 0, 16, 0);
+            statusStrip.Size = new Size(551, 22);
+            statusStrip.TabIndex = 3;
+            statusStrip.Text = "statusStrip1";
+            statusStrip.ItemClicked += statusStrip1_ItemClicked;
             // 
             // tsLabelStatus
             // 
-            this.tsLabelStatus.Name = "tsLabelStatus";
-            this.tsLabelStatus.Size = new System.Drawing.Size(50, 20);
-            this.tsLabelStatus.Text = "Ready";
+            tsLabelStatus.Name = "tsLabelStatus";
+            tsLabelStatus.Size = new Size(39, 17);
+            tsLabelStatus.Text = "Ready";
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(563, 363);
-            this.Controls.Add(this.pnlContent);
-            this.Controls.Add(this.pnlSidebar);
-            this.Controls.Add(this.pnlHeader);
-            this.Controls.Add(this.statusStrip);
-            this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.Name = "MainForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "MainForm";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.MainForm_Load);
-            this.pnlHeader.ResumeLayout(false);
-            this.flpRight.ResumeLayout(false);
-            this.flpRight.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbUser)).EndInit();
-            this.flpLeft.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
-            this.pnlSidebar.ResumeLayout(false);
-            this.flpNav.ResumeLayout(false);
-            this.statusStrip.ResumeLayout(false);
-            this.statusStrip.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(551, 456);
+            Controls.Add(pnlContent);
+            Controls.Add(pnlSidebar);
+            Controls.Add(pnlHeader);
+            Controls.Add(statusStrip);
+            Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Margin = new Padding(4, 3, 4, 3);
+            Name = "MainForm";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "MainForm";
+            WindowState = FormWindowState.Maximized;
+            Load += MainForm_Load;
+            pnlHeader.ResumeLayout(false);
+            flpRight.ResumeLayout(false);
+            flpRight.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pbUser).EndInit();
+            flpLeft.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pbLogo).EndInit();
+            pnlSidebar.ResumeLayout(false);
+            flpNav.ResumeLayout(false);
+            statusStrip.ResumeLayout(false);
+            statusStrip.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
 
         }
 
@@ -345,5 +363,6 @@ namespace App.WindowsApp.Forms
         private System.Windows.Forms.ToolStripStatusLabel tsLabelStatus;
         private System.Windows.Forms.PictureBox pbUser;
         private System.Windows.Forms.Label lblUser;
+        private Button btnCustomer;
     }
 }

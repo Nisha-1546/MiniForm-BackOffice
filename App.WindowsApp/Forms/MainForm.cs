@@ -16,6 +16,7 @@ namespace App.WindowsApp.Forms
     public partial class MainForm : Form
     {
         InMemoryProductService _productService = new InMemoryProductService();
+        InMemoryCustomerService _customerService=new InMemoryCustomerService();
         Dictionary<Type, UserControl> _views = new Dictionary<Type, UserControl>();
         public MainForm()
         {
@@ -61,6 +62,11 @@ namespace App.WindowsApp.Forms
 
         }
 
+        private void btnCustomer_Click(object sender, EventArgs e)
+        {
+        ShowView(()=>new  CustomerView(_customerService));
+        }
+
         private void ShowView<T>(Func<T> factory) where T : UserControl
         {
             var key = typeof(T);
@@ -68,7 +74,7 @@ namespace App.WindowsApp.Forms
             if (!_views.TryGetValue(key, out var view))
             {
                 view = factory();
-                //view.Dock = DockStyle.Fill;
+                view.Dock = DockStyle.Fill;
                 _views[key] = view;
             }
 
